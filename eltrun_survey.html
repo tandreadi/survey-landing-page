@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head> 
+	<title> Διατροφική Αξία Προϊόντων και Σήμανση Ποιότητας </title> 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" type="Text/css" href="css/eltrun_survey.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
+</head>
+
+<body> 
+	<header class="top-area">
+		<div class="header-area">
+			<div class="row">
+				<div class="col-sm-2">
+					<div class="logo" style="align:center;">
+						<a href="https://eltrun.org/"><img src="images/eltrun.png.webp" style="padding-top:2%;padding-bottom:0" width="200" height="85"></a>
+					</div>
+					<!-- /.logo-->
+				</div>
+			</div>
+		</div>
+		<!-- /.header-area -->
+	</header>
+	<!-- /.top-area-->
+	
+	
+	<h1 style="text-align:center;color:black;justify-content: space-around;padding-top:2%;">Διατροφική Αξία Προϊόντων και Σήμανση Ποιότητας</h1>
+	<div id="intro">Καλώς ήρθατε στην έρευνα καταναλωτών αναφορικά με τη διατροφική αξία των προϊόντων και τη σήμανση ποιότητας.<br></br></div>
+	<div id="container">
+		<center>
+			<div class="card">
+				<div class="container" style="margin-left:2%;">
+					<div id="headline">
+						<div id="text_container" style="text-align: justify;margin-left:5%;margin-right:5%;">
+							<div id="card-txt"> 
+							Στόχος της έρευνας είναι η μελέτη της επίδρασης της σήμανσης ποιότητας στις επιλογές των καταναλωτών και στην αντίληψή τους για τη διατροφική αξία των προϊόντων. Η παρούσα έρευνα διεξάγεται υπό την επιστημονική επίβλεψη του <b>Εργαστηρίου Ηλεκτρονικού Εμπορίου & Ηλεκτρονικού Επιχειρείν ELTRUN</b> του <b>Οικονομικού Πανεπιστημίου Αθηνών. </b>
+							<br></br> Η συμμετοχή σας είναι ανώνυμη και οι απαντήσεις σας θα παραμείνουν <b>εμπιστευτικές</b>. Η συμπλήρωση του ερωτηματολογίου δεν <b>διαρκεί</b> περισσότερο από <b>10 λεπτά</b>. 
+					
+							<br></br>Σας ευχαριστούμε για τη συμμετοχή σας!
+							</div>
+						</div>
+						<div id="feedback_container">
+							<div class="participation-txt">
+								<div class="participation-btn">
+									<button  class="participation-view" onclick="openUrl()">
+										Συμμετοχή στην έρευνα<img class="icon" src="images/next.png">
+									</button>
+								</div>
+								<!--/.participation-btn-->
+							</div>
+							<!--/.participation-txt-->
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<footer>
+				<div class="content" style="padding-top:2%;">
+					<div class="row">
+						<hr>
+						<div class="col-md-8 col-sm-6 col-xs-12">
+							<p>Copyright &copy; 2021 <a href="https://eltrun.org/">ELTRUN</a>. All Rights Reserved. </p>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</center>
+	</div>
+</body> 
+
+<script>
+var sites=['https://docs.google.com/forms/d/e/1FAIpQLSfI4rsNltBSvj_xGjCLPpbGjSQnDQMabImAJj-PetVJwgoWcA/viewform',
+'https://docs.google.com/forms/d/e/1FAIpQLSflvEJZESszsvpcw2U64sUjqCbgXl4gf33ZxjDraOIV0EfISQ/viewform',
+'https://docs.google.com/forms/d/e/1FAIpQLSd5P2YXXFMh3hvawxPs-bbVkSuvc15c-6ffRIi46Dnjuuk9FQ/viewform'
+];
+
+function openUrl(){
+    var i = Math.round(Math.random()*(sites.length-1));
+    window.location.href = sites[i];
+    return false;
+}
+</script>
+
+</html> 
